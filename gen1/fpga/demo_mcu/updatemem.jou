@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Thu Nov 11 14:18:41 2021
+# Process ID: 12208
+# Current directory: f:/General_Readout_Platform/gen1/fpga/demo_mcu
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/SDK/2019.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.sdk/bd_mcu_wrapper_hw_platform_0/bd_mcu_wrapper.mmi -data F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug\demo_mcu.elf -proc bd_mcu_i/microblaze_0 -bit F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.sdk/bd_mcu_wrapper_hw_platform_0/bd_mcu_wrapper.bit -out F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.sdk/bd_mcu_wrapper_hw_platform_0/download.bit -force
+# Log file: f:/General_Readout_Platform/gen1/fpga/demo_mcu/updatemem.log
+# Journal file: f:/General_Readout_Platform/gen1/fpga/demo_mcu\updatemem.jou
+#-----------------------------------------------------------
+source D:/Xilinx/SDK/2019.1/scripts/updatemem/main.tcl -notrace

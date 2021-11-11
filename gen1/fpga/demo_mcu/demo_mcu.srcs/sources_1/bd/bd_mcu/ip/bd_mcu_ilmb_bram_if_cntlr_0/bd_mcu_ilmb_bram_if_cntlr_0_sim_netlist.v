@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Thu Oct 28 16:25:37 2021
+// Date        : Thu Nov 11 13:54:30 2021
 // Host        : DESKTOP-9H84E9K running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0_sim_netlist.v
+//               F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0_sim_netlist.v
 // Design      : bd_mcu_ilmb_bram_if_cntlr_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -48,7 +48,7 @@ module bd_mcu_ilmb_bram_if_cntlr_0
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 SLMB WAIT" *) output Sl_Wait;
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 SLMB UE" *) output Sl_UE;
   (* x_interface_info = "xilinx.com:interface:lmb:1.0 SLMB CE" *) output Sl_CE;
-  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORT RST" *) (* x_interface_parameter = "XIL_INTERFACENAME BRAM_PORT, MEM_SIZE 8192, MASTER_TYPE BRAM_CTRL, MEM_WIDTH 32, MEM_ECC NONE, READ_LATENCY 1" *) output BRAM_Rst_A;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORT RST" *) (* x_interface_parameter = "XIL_INTERFACENAME BRAM_PORT, MEM_SIZE 524288, MASTER_TYPE BRAM_CTRL, MEM_WIDTH 32, MEM_ECC NONE, READ_LATENCY 1" *) output BRAM_Rst_A;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORT CLK" *) output BRAM_Clk_A;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORT ADDR" *) output [0:31]BRAM_Addr_A;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORT EN" *) output BRAM_EN_A;
@@ -113,7 +113,7 @@ module bd_mcu_ilmb_bram_if_cntlr_0
   (* C_ECC_STATUS_REGISTERS = "0" *) 
   (* C_FAMILY = "artix7" *) 
   (* C_FAULT_INJECT = "0" *) 
-  (* C_HIGHADDR = "64'b0000000000000000000000000000000000000000000000000001111111111111" *) 
+  (* C_HIGHADDR = "64'b0000000000000000000000000000000000000000000001111111111111111111" *) 
   (* C_INTERCONNECT = "0" *) 
   (* C_LMB_AWIDTH = "32" *) 
   (* C_LMB_DWIDTH = "32" *) 
@@ -209,7 +209,7 @@ endmodule
 (* C_BASEADDR = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* C_BRAM_AWIDTH = "32" *) (* C_CE_COUNTER_WIDTH = "0" *) 
 (* C_CE_FAILING_REGISTERS = "0" *) (* C_ECC = "0" *) (* C_ECC_ONOFF_REGISTER = "0" *) 
 (* C_ECC_ONOFF_RESET_VALUE = "1" *) (* C_ECC_STATUS_REGISTERS = "0" *) (* C_FAMILY = "artix7" *) 
-(* C_FAULT_INJECT = "0" *) (* C_HIGHADDR = "64'b0000000000000000000000000000000000000000000000000001111111111111" *) (* C_INTERCONNECT = "0" *) 
+(* C_FAULT_INJECT = "0" *) (* C_HIGHADDR = "64'b0000000000000000000000000000000000000000000001111111111111111111" *) (* C_INTERCONNECT = "0" *) 
 (* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) (* C_MASK = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
 (* C_MASK1 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) (* C_MASK2 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) (* C_MASK3 = "64'b0000000000000000000000000000000000000000100000000000000000000000" *) 
 (* C_NUM_LMB = "1" *) (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) (* C_S_AXI_CTRL_BASEADDR = "32'b11111111111111111111111111111111" *) 

@@ -1,6 +1,35 @@
-12:53:14 **** Incremental Build of configuration Debug for project demo_mcu ****
+14:18:33 **** Build of configuration Debug for project demo_mcu ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/L_gpio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/L_gpio.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/L_gpio.d" -MT"src/L_gpio.o" -o "src/L_gpio.o" "../src/L_gpio.c"
+'Finished building: ../src/L_gpio.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:45:14: warning: unused variable 'temp_u' [-Wunused-variable]
+     uint32_t temp_u;
+              ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9748	    652	   3144	  13544	   34e8	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
 
-12:53:14 Build Finished (took 79ms)
+14:18:34 Build Finished (took 932ms)
 

@@ -70,17 +70,17 @@ set rc [catch {
   create_project -in_memory -part xc7a100tfgg484-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir F:/General_Platform/fpga/demo_mcu/demo_mcu.cache/wt [current_project]
-  set_property parent.project_path F:/General_Platform/fpga/demo_mcu/demo_mcu.xpr [current_project]
-  set_property ip_output_repo F:/General_Platform/fpga/demo_mcu/demo_mcu.cache/ip [current_project]
+  set_property webtalk.parent_dir F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.cache/wt [current_project]
+  set_property parent.project_path F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.xpr [current_project]
+  set_property ip_output_repo F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/bd_mcu_wrapper.dcp
+  add_files -quiet F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/bd_mcu_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/bd_mcu.bd
+  add_files F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/bd_mcu.bd
   set_param project.isImplRun false
-  read_xdc F:/General_Platform/fpga/demo_mcu/src/demo_mcu.xdc
+  read_xdc F:/General_Readout_Platform/gen1/fpga/demo_mcu/src/demo_mcu.xdc
   set_param project.isImplRun true
   link_design -top bd_mcu_wrapper -part xc7a100tfgg484-2
   set_param project.isImplRun false

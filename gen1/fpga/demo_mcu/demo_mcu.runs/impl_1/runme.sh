@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/impl_1'
+HD_PWD='F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

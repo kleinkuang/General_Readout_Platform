@@ -1,61 +1,87 @@
-/******************************************************************************
-*
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
-*
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
-* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
-* Except as contained in this notice, the name of the Xilinx shall not be used
-* in advertising or otherwise to promote the sale, use or other dealings in
-* this Software without prior written authorization from Xilinx.
-*
-******************************************************************************/
+// File:    main.c
+// Author:  Lei Kuang
+// Date:    11th February 2021
+// @ Imperial College London
 
-/*
- * helloworld.c: simple test application
- *
- * This application configures UART 16550 to baud rate 9600.
- * PS7 UART (Zynq) is not initialized by this application, since
- * bootrom/bsp configures it to baud rate 115200
- *
- * ------------------------------------------------
- * | UART TYPE   BAUD RATE                        |
- * ------------------------------------------------
- *   uartns550   9600
- *   uartlite    Configurable only in HW design
- *   ps7_uart    115200 (configured by bootrom/bsp)
- */
-
+/* Includes ------------------------------------------------------------------*/
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
 
+#include "L_gpio.h"
+
+/* Private function prototypes -----------------------------------------------*/
+void Error_Handler  ();
+
+void Rec_cmd        ();
+void Exe_cmd        ();
+void Print_Error    ();
+
+/* Private variables ---------------------------------------------------------*/
+uint16_t    func = 0x00;
+uint16_t    par1 = 0x00;
+uint16_t    par2 = 0x00;
 
 int main()
 {
     init_platform();
 
-    print("Hello World\n\r");
+    // Peripherals Init
+    L_GPIO_Init();
+
+    while(1)
+    {
+        Rec_cmd();
+        Exe_cmd();
+    }
 
     cleanup_platform();
     return 0;
+}
+
+/* Private  function implementations -----------------------------------------*/
+void Exe_cmd()
+{
+    uint32_t temp_u;
+
+    switch(func)
+    {
+        // ----------------------------------------------------------------
+        // - "get_version"
+        case 0x0000:    xil_printf("M: Firmware for General Platform\n");
+                        xil_printf("   Ver:   %d\n$%d#", 20211111, 20211111);
+                        break;
+
+        // ----------------------------------------------------------------
+        // - "led_set"
+        case 0x2100:    xil_printf("M: LED Set\n");
+       					xil_printf("   Cha: %d\n",   par1);
+       					xil_printf("   Val: %d\n$#", par2);
+       					L_LED_Set(par1, par2);
+                        break;
+
+        default:        xil_printf("Function not implemented\n$#");
+    }
+}
+
+void Rec_cmd()
+{
+    unsigned char buffer[6];
+
+    for(int i=0; i<6; i++)
+        buffer[i] = inbyte();
+
+    func   = buffer[0] << 8 | buffer[1];
+    par1   = buffer[2] << 8 | buffer[3];
+    par2   = buffer[4] << 8 | buffer[5];
+}
+
+void Print_Error()
+{
+    xil_printf("M: Error!\n$#");
+}
+
+void Error_Handler()
+{
+
 }

@@ -2,12 +2,12 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Nov 11 12:29:39 2021
-# Process ID: 6780
-# Current directory: F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1
+# Start of session at: Thu Nov 11 14:13:04 2021
+# Process ID: 8636
+# Current directory: F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1
 # Command line: vivado.exe -log bd_mcu_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_mcu_wrapper.tcl
-# Log file: F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/bd_mcu_wrapper.vds
-# Journal file: F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1\vivado.jou
+# Log file: F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/bd_mcu_wrapper.vds
+# Journal file: F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source bd_mcu_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -19,60 +19,117 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tfgg484-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19452 
+INFO: Helper process launched with PID 22032 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 752.961 ; gain = 177.008
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 760.086 ; gain = 177.496
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_wrapper' [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/hdl/bd_mcu_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu' [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:13]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_axi_uartlite_0_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_axi_uartlite_0_0' (1#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_axi_uartlite_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'bd_mcu_axi_uartlite_0_0' has 22 connections declared, but only 21 given [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:108]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_clk_wiz_1_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_clk_wiz_1_0' (2#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_mdm_1_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_mdm_1_0' (3#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_microblaze_0_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_microblaze_0_0' (4#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_microblaze_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'bd_mcu_microblaze_0_0' has 52 connections declared, but only 49 given [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:149]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_microblaze_0_axi_periph_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:275]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_H605G3' [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:709]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_H605G3' (5#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:709]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_microblaze_0_axi_periph_0' (6#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:275]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1E7TEU8' [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:475]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_dlmb_bram_if_cntlr_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_dlmb_bram_if_cntlr_0' (7#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_dlmb_v10_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_dlmb_v10_0' (8#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_dlmb_v10_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'bd_mcu_dlmb_v10_0' has 25 connections declared, but only 24 given [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:621]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_ilmb_bram_if_cntlr_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_ilmb_bram_if_cntlr_0' (9#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_ilmb_v10_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_ilmb_v10_0' (10#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_ilmb_v10_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'bd_mcu_ilmb_v10_0' has 25 connections declared, but only 24 given [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:667]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_lmb_bram_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_lmb_bram_0' (11#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_lmb_bram_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'bd_mcu_lmb_bram_0' has 16 connections declared, but only 14 given [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:692]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1E7TEU8' (12#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:475]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_rst_clk_wiz_1_100M_0' [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_rst_clk_wiz_1_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_rst_clk_wiz_1_100M_0' (13#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-6780-DESKTOP-9H84E9K/realtime/bd_mcu_rst_clk_wiz_1_100M_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'bd_mcu_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:262]
-INFO: [Synth 8-6157] synthesizing module 'bd_mcu_xlconstant_0_0' [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_xlconstant_0_0/synth/bd_mcu_xlconstant_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_wrapper' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/hdl/bd_mcu_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_axi_gpio_0_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_axi_gpio_0_0' (1#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_axi_gpio_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_gpio_0' of module 'bd_mcu_axi_gpio_0_0' has 21 connections declared, but only 20 given [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:132]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_axi_uartlite_0_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_axi_uartlite_0_0' (2#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'bd_mcu_axi_uartlite_0_0' has 22 connections declared, but only 21 given [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:153]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_clk_wiz_1_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_clk_wiz_1_0' (3#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_mdm_1_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_mdm_1_0' (4#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_microblaze_0_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_microblaze_0_0' (5#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'bd_mcu_microblaze_0_0' has 52 connections declared, but only 51 given [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:194]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_microblaze_0_axi_periph_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:346]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_2V12PU' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:796]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_2V12PU' (6#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:796]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_19KC7TF' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:928]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_19KC7TF' (7#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:928]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_H605G3' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:1294]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_H605G3' (8#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:1294]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_xbar_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_xbar_0' (9#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_xbar_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'bd_mcu_xbar_0' has 40 connections declared, but only 38 given [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:755]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_microblaze_0_axi_periph_0' (10#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:346]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1E7TEU8' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:1060]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_dlmb_bram_if_cntlr_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_dlmb_bram_if_cntlr_0' (11#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_dlmb_v10_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_dlmb_v10_0' (12#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'bd_mcu_dlmb_v10_0' has 25 connections declared, but only 24 given [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:1206]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_ilmb_bram_if_cntlr_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_ilmb_bram_if_cntlr_0' (13#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_ilmb_v10_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_ilmb_v10_0' (14#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'bd_mcu_ilmb_v10_0' has 25 connections declared, but only 24 given [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:1252]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_lmb_bram_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_lmb_bram_0' (15#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'bd_mcu_lmb_bram_0' has 16 connections declared, but only 14 given [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:1277]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1E7TEU8' (16#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:1060]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_rst_clk_wiz_1_100M_0' [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_rst_clk_wiz_1_100M_0' (17#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/.Xil/Vivado-8636-DESKTOP-9H84E9K/realtime/bd_mcu_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'bd_mcu_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:330]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_xlconstant_0_0' [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_xlconstant_0_0/synth/bd_mcu_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 0 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (14#1) [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_xlconstant_0_0' (15#1) [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_xlconstant_0_0/synth/bd_mcu_xlconstant_0_0.v:57]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu' (16#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_wrapper' (17#1) [F:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/hdl/bd_mcu_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (18#1) [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_xlconstant_0_0' (19#1) [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_xlconstant_0_0/synth/bd_mcu_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_mcu_xlslice_0_0' [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_xlslice_0_0/synth/bd_mcu_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (20#1) [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_xlslice_0_0' (21#1) [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_xlslice_0_0/synth/bd_mcu_xlslice_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu' (22#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/synth/bd_mcu.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_mcu_wrapper' (23#1) [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/hdl/bd_mcu_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[4]
 WARNING: [Synth 8-3331] design s00_couplers_imp_H605G3 has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_H605G3 has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design s00_couplers_imp_H605G3 has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_H605G3 has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port ACLK
-WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_19KC7TF has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_19KC7TF has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_19KC7TF has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_19KC7TF has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_2V12PU has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_2V12PU has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_2V12PU has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_2V12PU has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 820.086 ; gain = 244.133
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 828.215 ; gain = 245.625
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -85,67 +142,71 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 820.086 ; gain = 244.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 828.215 ; gain = 245.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 820.086 ; gain = 244.133
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 828.215 ; gain = 245.625
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_microblaze_0_0/bd_mcu_microblaze_0_0/bd_mcu_microblaze_0_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_microblaze_0_0/bd_mcu_microblaze_0_0/bd_mcu_microblaze_0_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_dlmb_v10_0/bd_mcu_dlmb_v10_0/bd_mcu_ilmb_v10_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_dlmb_v10_0/bd_mcu_dlmb_v10_0/bd_mcu_ilmb_v10_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_v10_0/bd_mcu_ilmb_v10_0/bd_mcu_ilmb_v10_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_v10_0/bd_mcu_ilmb_v10_0/bd_mcu_ilmb_v10_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_dlmb_bram_if_cntlr_0/bd_mcu_dlmb_bram_if_cntlr_0/bd_mcu_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_dlmb_bram_if_cntlr_0/bd_mcu_dlmb_bram_if_cntlr_0/bd_mcu_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_lmb_bram_0/bd_mcu_lmb_bram_0/bd_mcu_lmb_bram_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_lmb_bram_0/bd_mcu_lmb_bram_0/bd_mcu_lmb_bram_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_mdm_1_0/bd_mcu_mdm_1_0/bd_mcu_mdm_1_0_in_context.xdc] for cell 'bd_mcu_i/mdm_1'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_mdm_1_0/bd_mcu_mdm_1_0/bd_mcu_mdm_1_0_in_context.xdc] for cell 'bd_mcu_i/mdm_1'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc] for cell 'bd_mcu_i/clk_wiz_1'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc] for cell 'bd_mcu_i/clk_wiz_1'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_rst_clk_wiz_1_100M_0/bd_mcu_rst_clk_wiz_1_100M_0/bd_mcu_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'bd_mcu_i/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_rst_clk_wiz_1_100M_0/bd_mcu_rst_clk_wiz_1_100M_0/bd_mcu_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'bd_mcu_i/rst_clk_wiz_1_100M'
-Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_uartlite_0_0/bd_mcu_axi_uartlite_0_0/bd_mcu_axi_uartlite_0_0_in_context.xdc] for cell 'bd_mcu_i/axi_uartlite_0'
-Finished Parsing XDC File [f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_uartlite_0_0/bd_mcu_axi_uartlite_0_0/bd_mcu_axi_uartlite_0_0_in_context.xdc] for cell 'bd_mcu_i/axi_uartlite_0'
-Parsing XDC File [F:/General_Platform/fpga/demo_mcu/src/demo_mcu.xdc]
-WARNING: [Constraints 18-619] A clock with name 'CLK_clk_p' already exists, overwriting the previous clock with the same name. [F:/General_Platform/fpga/demo_mcu/src/demo_mcu.xdc:4]
-Finished Parsing XDC File [F:/General_Platform/fpga/demo_mcu/src/demo_mcu.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/General_Platform/fpga/demo_mcu/src/demo_mcu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_mcu_wrapper_propImpl.xdc].
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_microblaze_0_0/bd_mcu_microblaze_0_0/bd_mcu_microblaze_0_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_microblaze_0_0/bd_mcu_microblaze_0_0/bd_mcu_microblaze_0_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_dlmb_v10_0/bd_mcu_dlmb_v10_0/bd_mcu_ilmb_v10_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_dlmb_v10_0/bd_mcu_dlmb_v10_0/bd_mcu_ilmb_v10_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_v10_0/bd_mcu_ilmb_v10_0/bd_mcu_ilmb_v10_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_v10_0/bd_mcu_ilmb_v10_0/bd_mcu_ilmb_v10_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_dlmb_bram_if_cntlr_0/bd_mcu_dlmb_bram_if_cntlr_0/bd_mcu_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_dlmb_bram_if_cntlr_0/bd_mcu_dlmb_bram_if_cntlr_0/bd_mcu_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0/bd_mcu_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_lmb_bram_0/bd_mcu_lmb_bram_0/bd_mcu_lmb_bram_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_lmb_bram_0/bd_mcu_lmb_bram_0/bd_mcu_lmb_bram_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_mdm_1_0/bd_mcu_mdm_1_0/bd_mcu_mdm_1_0_in_context.xdc] for cell 'bd_mcu_i/mdm_1'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_mdm_1_0/bd_mcu_mdm_1_0/bd_mcu_mdm_1_0_in_context.xdc] for cell 'bd_mcu_i/mdm_1'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc] for cell 'bd_mcu_i/clk_wiz_1'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc] for cell 'bd_mcu_i/clk_wiz_1'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_rst_clk_wiz_1_100M_0/bd_mcu_rst_clk_wiz_1_100M_0/bd_mcu_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'bd_mcu_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_rst_clk_wiz_1_100M_0/bd_mcu_rst_clk_wiz_1_100M_0/bd_mcu_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'bd_mcu_i/rst_clk_wiz_1_100M'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_uartlite_0_0/bd_mcu_axi_uartlite_0_0/bd_mcu_axi_uartlite_0_0_in_context.xdc] for cell 'bd_mcu_i/axi_uartlite_0'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_uartlite_0_0/bd_mcu_axi_uartlite_0_0/bd_mcu_axi_uartlite_0_0_in_context.xdc] for cell 'bd_mcu_i/axi_uartlite_0'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_xbar_0/bd_mcu_xbar_0/bd_mcu_xbar_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_xbar_0/bd_mcu_xbar_0/bd_mcu_xbar_0_in_context.xdc] for cell 'bd_mcu_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_gpio_0_0/bd_mcu_axi_gpio_0_0/bd_mcu_axi_gpio_0_0_in_context.xdc] for cell 'bd_mcu_i/axi_gpio_0'
+Finished Parsing XDC File [f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_gpio_0_0/bd_mcu_axi_gpio_0_0/bd_mcu_axi_gpio_0_0_in_context.xdc] for cell 'bd_mcu_i/axi_gpio_0'
+Parsing XDC File [F:/General_Readout_Platform/gen1/fpga/demo_mcu/src/demo_mcu.xdc]
+WARNING: [Constraints 18-619] A clock with name 'CLK_clk_p' already exists, overwriting the previous clock with the same name. [F:/General_Readout_Platform/gen1/fpga/demo_mcu/src/demo_mcu.xdc:4]
+Finished Parsing XDC File [F:/General_Readout_Platform/gen1/fpga/demo_mcu/src/demo_mcu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/General_Readout_Platform/gen1/fpga/demo_mcu/src/demo_mcu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_mcu_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_mcu_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 904.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 920.320 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 904.984 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 920.320 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bd_mcu_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 907.984 ; gain = 332.031
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 922.320 ; gain = 339.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 907.984 ; gain = 332.031
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 922.320 ; gain = 339.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK_clk_n. (constraint file  f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_clk_n. (constraint file  f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for CLK_clk_p. (constraint file  f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_clk_p. (constraint file  f:/General_Platform/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_clk_n. (constraint file  f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_clk_n. (constraint file  f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_clk_p. (constraint file  f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_clk_p. (constraint file  f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0/bd_mcu_clk_wiz_1_0_in_context.xdc, line 6).
 Applied set_property DONT_TOUCH = true for bd_mcu_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for bd_mcu_i/microblaze_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for bd_mcu_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
@@ -159,11 +220,14 @@ Applied set_property DONT_TOUCH = true for bd_mcu_i/rst_clk_wiz_1_100M. (constra
 Applied set_property DONT_TOUCH = true for bd_mcu_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for bd_mcu_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for bd_mcu_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_mcu_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_mcu_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_mcu_i/xlslice_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 907.984 ; gain = 332.031
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 922.320 ; gain = 339.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 907.984 ; gain = 332.031
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 922.320 ; gain = 339.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -198,14 +262,42 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port ACLK
-WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design bd_mcu_xlslice_0_0 has unconnected port Din[4]
 WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
 WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
 WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design bd_mcu_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 907.984 ; gain = 332.031
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 922.320 ; gain = 339.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -224,13 +316,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'bd_mcu_i/clk_wiz_1/clk_ou
 WARNING: [Synth 8-565] redefining clock 'CLK_clk_p'
 INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 907.984 ; gain = 332.031
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 922.320 ; gain = 339.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 907.984 ; gain = 332.031
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 922.320 ; gain = 339.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,7 +334,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 912.660 ; gain = 336.707
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 922.320 ; gain = 339.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,7 +358,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 928.461 ; gain = 352.508
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 936.590 ; gain = 354.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -279,7 +371,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 928.461 ; gain = 352.508
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 936.590 ; gain = 354.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,25 +383,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 928.461 ; gain = 352.508
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 936.590 ; gain = 354.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 928.461 ; gain = 352.508
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 936.590 ; gain = 354.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 928.461 ; gain = 352.508
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 936.590 ; gain = 354.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 928.461 ; gain = 352.508
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 936.590 ; gain = 354.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -319,66 +411,71 @@ Report BlackBoxes:
 +------+----------------------------+----------+
 |      |BlackBox name               |Instances |
 +------+----------------------------+----------+
-|1     |bd_mcu_axi_uartlite_0_0     |         1|
-|2     |bd_mcu_clk_wiz_1_0          |         1|
-|3     |bd_mcu_mdm_1_0              |         1|
-|4     |bd_mcu_microblaze_0_0       |         1|
-|5     |bd_mcu_rst_clk_wiz_1_100M_0 |         1|
-|6     |bd_mcu_dlmb_bram_if_cntlr_0 |         1|
-|7     |bd_mcu_dlmb_v10_0           |         1|
-|8     |bd_mcu_ilmb_bram_if_cntlr_0 |         1|
-|9     |bd_mcu_ilmb_v10_0           |         1|
-|10    |bd_mcu_lmb_bram_0           |         1|
+|1     |bd_mcu_xbar_0               |         1|
+|2     |bd_mcu_axi_gpio_0_0         |         1|
+|3     |bd_mcu_axi_uartlite_0_0     |         1|
+|4     |bd_mcu_clk_wiz_1_0          |         1|
+|5     |bd_mcu_mdm_1_0              |         1|
+|6     |bd_mcu_microblaze_0_0       |         1|
+|7     |bd_mcu_rst_clk_wiz_1_100M_0 |         1|
+|8     |bd_mcu_dlmb_bram_if_cntlr_0 |         1|
+|9     |bd_mcu_dlmb_v10_0           |         1|
+|10    |bd_mcu_ilmb_bram_if_cntlr_0 |         1|
+|11    |bd_mcu_ilmb_v10_0           |         1|
+|12    |bd_mcu_lmb_bram_0           |         1|
 +------+----------------------------+----------+
 
 Report Cell Usage: 
 +------+----------------------------+------+
 |      |Cell                        |Count |
 +------+----------------------------+------+
-|1     |bd_mcu_axi_uartlite_0_0     |     1|
-|2     |bd_mcu_clk_wiz_1_0          |     1|
-|3     |bd_mcu_dlmb_bram_if_cntlr_0 |     1|
-|4     |bd_mcu_dlmb_v10_0           |     1|
-|5     |bd_mcu_ilmb_bram_if_cntlr_0 |     1|
-|6     |bd_mcu_ilmb_v10_0           |     1|
-|7     |bd_mcu_lmb_bram_0           |     1|
-|8     |bd_mcu_mdm_1_0              |     1|
-|9     |bd_mcu_microblaze_0_0       |     1|
-|10    |bd_mcu_rst_clk_wiz_1_100M_0 |     1|
-|11    |IBUF                        |     2|
-|12    |OBUF                        |     2|
+|1     |bd_mcu_axi_gpio_0_0         |     1|
+|2     |bd_mcu_axi_uartlite_0_0     |     1|
+|3     |bd_mcu_clk_wiz_1_0          |     1|
+|4     |bd_mcu_dlmb_bram_if_cntlr_0 |     1|
+|5     |bd_mcu_dlmb_v10_0           |     1|
+|6     |bd_mcu_ilmb_bram_if_cntlr_0 |     1|
+|7     |bd_mcu_ilmb_v10_0           |     1|
+|8     |bd_mcu_lmb_bram_0           |     1|
+|9     |bd_mcu_mdm_1_0              |     1|
+|10    |bd_mcu_microblaze_0_0       |     1|
+|11    |bd_mcu_rst_clk_wiz_1_100M_0 |     1|
+|12    |bd_mcu_xbar_0               |     1|
+|13    |IBUF                        |     2|
+|14    |OBUF                        |     6|
 +------+----------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+--------------------------------------+------+
 |      |Instance                      |Module                                |Cells |
 +------+------------------------------+--------------------------------------+------+
-|1     |top                           |                                      |   785|
-|2     |  bd_mcu_i                    |bd_mcu                                |   781|
-|3     |    microblaze_0_axi_periph   |bd_mcu_microblaze_0_axi_periph_0      |     0|
+|1     |top                           |                                      |  1157|
+|2     |  bd_mcu_i                    |bd_mcu                                |  1149|
+|3     |    microblaze_0_axi_periph   |bd_mcu_microblaze_0_axi_periph_0      |   263|
 |4     |    xlconstant_0              |bd_mcu_xlconstant_0_0                 |     0|
-|5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1E7TEU8 |   496|
+|5     |    xlslice_0                 |bd_mcu_xlslice_0_0                    |     0|
+|6     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1E7TEU8 |   496|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 928.461 ; gain = 352.508
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 936.590 ; gain = 354.000
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 928.461 ; gain = 264.609
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 928.461 ; gain = 352.508
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 936.590 ; gain = 259.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 936.590 ; gain = 354.000
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 946.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 954.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+65 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 946.410 ; gain = 641.887
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 946.410 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 954.137 ; gain = 644.230
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 954.137 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'F:/General_Platform/fpga/demo_mcu/demo_mcu.runs/synth_1/bd_mcu_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.runs/synth_1/bd_mcu_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bd_mcu_wrapper_utilization_synth.rpt -pb bd_mcu_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 11 12:30:03 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 11 14:13:28 2021...

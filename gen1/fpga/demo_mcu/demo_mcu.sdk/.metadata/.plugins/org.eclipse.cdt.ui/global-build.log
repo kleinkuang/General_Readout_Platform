@@ -1,20 +1,23 @@
-12:53:08 **** Clean-only build of configuration Debug for project demo_mcu ****
+14:18:29 **** Clean-only build of configuration Debug for project demo_mcu ****
 make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  demo_mcu.elf.size  demo_mcu.elf
+rm -rf  ./src/L_gpio.o ./src/helloworld.o ./src/platform.o  ./src/L_gpio.d ./src/helloworld.d ./src/platform.d  demo_mcu.elf.size  demo_mcu.elf
 ' '
-12:53:09 **** Clean-only build of project demo_mcu_bsp ****
+14:18:29 **** Clean-only build of project demo_mcu_bsp ****
 make -k clean 
 make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
 make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_4/src -s clean 
 make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
 rm -f microblaze_0/lib/libxil.a
-12:53:09 **** Build of project demo_mcu_bsp ****
+14:18:29 **** Build of project demo_mcu_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_3/src"
 make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
 make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
 make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
@@ -26,6 +29,9 @@ mb-ar: creating ../../../lib/libxil.a
 "Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
 make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
 "Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
 make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling standalone";
@@ -36,11 +42,20 @@ microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling uartlite"
 'Finished building libraries'
-12:53:12 **** Build of configuration Debug for project demo_mcu ****
+14:18:33 **** Build of configuration Debug for project demo_mcu ****
 make all 
+'Building file: ../src/L_gpio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/L_gpio.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/L_gpio.d" -MT"src/L_gpio.o" -o "src/L_gpio.o" "../src/L_gpio.c"
+'Finished building: ../src/L_gpio.c'
+' '
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:45:14: warning: unused variable 'temp_u' [-Wunused-variable]
+     uint32_t temp_u;
+              ^~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building file: ../src/platform.c'
@@ -50,15 +65,12 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../demo_mcu_
 ' '
 'Building target: demo_mcu.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: demo_mcu.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2696	    268	   3108	   6072	   17b8	demo_mcu.elf
+   9748	    652	   3144	  13544	   34e8	demo_mcu.elf
 'Finished building: demo_mcu.elf.size'
 ' '
-12:53:14 **** Incremental Build of configuration Debug for project demo_mcu ****
-make all 
-make: Nothing to be done for 'all'.

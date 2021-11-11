@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="bd_mcu" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1635436266"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1635436266"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1635436266"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1635436266"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1636638843"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1636638843"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1636638843"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1636638843"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\bd_mcu_microblaze_0_0\bd_mcu_microblaze_0_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0"/>
@@ -108,6 +108,30 @@
       </File>
       <File Name="ip\bd_mcu_xlconstant_0_0\bd_mcu_xlconstant_0_0.xci" Type="IP">
         <Instance HierarchyPath="xlconstant_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\bd_mcu_xbar_0\bd_mcu_xbar_0.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0_axi_periph/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\bd_mcu_axi_gpio_0_0\bd_mcu_axi_gpio_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_gpio_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\bd_mcu_xlslice_0_0\bd_mcu_xlslice_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

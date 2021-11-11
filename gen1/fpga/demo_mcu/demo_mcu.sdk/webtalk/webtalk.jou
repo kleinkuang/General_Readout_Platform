@@ -2,8 +2,8 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # 
-# Start of session at: Thu Nov 11 12:53:51 2021
-# Process ID: 15756
+# Start of session at: Thu Nov 11 14:12:37 2021
+# Process ID: 23452
 # Current directory: F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
 # Log file: F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.sdk/webtalk/webtalk.log

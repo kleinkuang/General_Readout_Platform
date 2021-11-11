@@ -24,18 +24,18 @@ set_property  IOSTANDARD    LVCMOS33    [get_ports NRST]
 # --------------------------------------------------------------
 # LEDs
 # --------------------------------------------------------------
-## - LED3 (Labelled on the PCB)
-#set_property  PACKAGE_PIN   M16         [get_ports led[3]]
-#set_property  IOSTANDARD    LVCMOS33    [get_ports led[3]]
-## - LED4
-#set_property  PACKAGE_PIN   M15         [get_ports led[2]]
-#set_property  IOSTANDARD    LVCMOS33    [get_ports led[2]]
-## - LED5
-#set_property  PACKAGE_PIN   K16         [get_ports led[1]]
-#set_property  IOSTANDARD    LVCMOS33    [get_ports led[1]]
-## - LED6
-#set_property  PACKAGE_PIN   L16         [get_ports led[0]]
-#set_property  IOSTANDARD    LVCMOS33    [get_ports led[0]]
+# - LED3 (Labelled on the PCB)
+set_property  PACKAGE_PIN   M16         [get_ports LED[3]]
+set_property  IOSTANDARD    LVCMOS33    [get_ports LED[3]]
+# - LED4
+set_property  PACKAGE_PIN   M15         [get_ports LED[2]]
+set_property  IOSTANDARD    LVCMOS33    [get_ports LED[2]]
+# - LED5
+set_property  PACKAGE_PIN   K16         [get_ports LED[1]]
+set_property  IOSTANDARD    LVCMOS33    [get_ports LED[1]]
+# - LED6
+set_property  PACKAGE_PIN   L16         [get_ports LED[0]]
+set_property  IOSTANDARD    LVCMOS33    [get_ports LED[0]]
 
 # --------------------------------------------------------------
 # GPIOs
