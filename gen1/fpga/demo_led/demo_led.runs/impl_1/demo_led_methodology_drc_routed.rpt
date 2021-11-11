@@ -1,0 +1,56 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Nov 11 11:42:34 2021
+| Host         : DESKTOP-9H84E9K running 64-bit major release  (build 9200)
+| Command      : report_methodology -file demo_led_methodology_drc_routed.rpt -pb demo_led_methodology_drc_routed.pb -rpx demo_led_methodology_drc_routed.rpx
+| Design       : demo_led
+| Device       : xc7a100tfgg484-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++---------+----------+--------------------------------------------------------+------------+
+| Rule    | Severity | Description                                            | Violations |
++---------+----------+--------------------------------------------------------+------------+
+| LUTAR-1 | Warning  | LUT drives async reset alert                           | 1          |
+| XDCC-1  | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7  | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++---------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell clk_cnt[0]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) clk_cnt_reg[0]/CLR, clk_cnt_reg[10]/CLR, clk_cnt_reg[11]/CLR, clk_cnt_reg[12]/CLR, clk_cnt_reg[13]/CLR, clk_cnt_reg[14]/CLR, clk_cnt_reg[15]/CLR, clk_cnt_reg[16]/CLR, clk_cnt_reg[17]/CLR, clk_cnt_reg[18]/CLR, clk_cnt_reg[19]/CLR, clk_cnt_reg[1]/CLR, clk_cnt_reg[20]/CLR, clk_cnt_reg[21]/CLR, clk_cnt_reg[22]/CLR (the first 15 of 36 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 [get_ports clk_p] (Source: F:/General_Platform/fpga/demo_led/src/demo_led.xdc (Line: 4))
+Previous: create_clock -period 5.000 [get_ports clk_p] (Source: f:/General_Platform/fpga/demo_led/demo_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 [get_ports clk_p] (Source: F:/General_Platform/fpga/demo_led/src/demo_led.xdc (Line: 4))
+Previous: create_clock -period 5.000 [get_ports clk_p] (Source: f:/General_Platform/fpga/demo_led/demo_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+

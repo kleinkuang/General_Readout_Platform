@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 11 11:41:24 2021
+# Process ID: 20020
+# Current directory: F:/General_Platform/fpga/demo_led/demo_led.runs/synth_1
+# Command line: vivado.exe -log demo_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source demo_led.tcl
+# Log file: F:/General_Platform/fpga/demo_led/demo_led.runs/synth_1/demo_led.vds
+# Journal file: F:/General_Platform/fpga/demo_led/demo_led.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source demo_led.tcl -notrace
