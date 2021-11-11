@@ -1,15 +1,15 @@
-12:36:47 **** Clean-only build of configuration Debug for project demo_mcu ****
+12:53:08 **** Clean-only build of configuration Debug for project demo_mcu ****
 make clean 
 rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  demo_mcu.elf.size  demo_mcu.elf
 ' '
-12:36:47 **** Clean-only build of project demo_mcu_bsp ****
+12:53:09 **** Clean-only build of project demo_mcu_bsp ****
 make -k clean 
 make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
 make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
 make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
 rm -f microblaze_0/lib/libxil.a
-12:36:47 **** Build of project demo_mcu_bsp ****
+12:53:09 **** Build of project demo_mcu_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_3/src"
 make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -36,7 +36,7 @@ microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling uartlite"
 'Finished building libraries'
-12:36:50 **** Build of configuration Debug for project demo_mcu ****
+12:53:12 **** Build of configuration Debug for project demo_mcu ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -59,3 +59,6 @@ mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
    2696	    268	   3108	   6072	   17b8	demo_mcu.elf
 'Finished building: demo_mcu.elf.size'
 ' '
+12:53:14 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
