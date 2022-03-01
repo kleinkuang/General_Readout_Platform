@@ -560,7 +560,7 @@
 #define XPAR_AXI_GPIO_0_HIGHADDR 0x40000FFF
 #define XPAR_AXI_GPIO_0_DEVICE_ID 0
 #define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_AXI_GPIO_0_IS_DUAL 1
+#define XPAR_AXI_GPIO_0_IS_DUAL 0
 
 
 /******************************************************************/
@@ -570,7 +570,30 @@
 #define XPAR_GPIO_0_HIGHADDR 0x40000FFF
 #define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
 #define XPAR_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_0_IS_DUAL 1
+#define XPAR_GPIO_0_IS_DUAL 0
+
+
+/******************************************************************/
+
+/* Definitions for driver IIC */
+#define XPAR_XIIC_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_IIC_0 */
+#define XPAR_AXI_IIC_0_DEVICE_ID 0
+#define XPAR_AXI_IIC_0_BASEADDR 0x40800000
+#define XPAR_AXI_IIC_0_HIGHADDR 0x4080FFFF
+#define XPAR_AXI_IIC_0_TEN_BIT_ADR 0
+#define XPAR_AXI_IIC_0_GPO_WIDTH 1
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_IIC_0 */
+#define XPAR_IIC_0_DEVICE_ID XPAR_AXI_IIC_0_DEVICE_ID
+#define XPAR_IIC_0_BASEADDR 0x40800000
+#define XPAR_IIC_0_HIGHADDR 0x4080FFFF
+#define XPAR_IIC_0_TEN_BIT_ADR 0
+#define XPAR_IIC_0_GPO_WIDTH 1
 
 
 /******************************************************************/

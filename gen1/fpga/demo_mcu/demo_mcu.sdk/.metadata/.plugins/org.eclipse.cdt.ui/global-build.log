@@ -74,3 +74,1380 @@ mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
    9748	    652	   3144	  13544	   34e8	demo_mcu.elf
 'Finished building: demo_mcu.elf.size'
 ' '
+12:11:12 **** Clean-only build of project demo_mcu_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_4/src -s clean 
+make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+12:11:13 **** Clean-only build of configuration Debug for project demo_mcu ****
+make clean 
+rm -rf  ./src/L_gpio.o ./src/helloworld.o ./src/platform.o  ./src/L_gpio.d ./src/helloworld.d ./src/platform.d  demo_mcu.elf.size  demo_mcu.elf
+' '
+12:11:13 **** Build of project demo_mcu_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+12:11:17 **** Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/L_gpio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/L_gpio.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/L_gpio.d" -MT"src/L_gpio.o" -o "src/L_gpio.o" "../src/L_gpio.c"
+'Finished building: ../src/L_gpio.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:45:14: warning: unused variable 'temp_u' [-Wunused-variable]
+     uint32_t temp_u;
+              ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9748	    652	   3144	  13544	   34e8	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:11:22 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+12:19:10 **** Clean-only build of project demo_mcu_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_4/src -s clean 
+make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
+make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+12:19:10 **** Clean-only build of configuration Debug for project demo_mcu ****
+make clean 
+rm -rf  ./src/L_gpio.o ./src/helloworld.o ./src/platform.o  ./src/L_gpio.d ./src/helloworld.d ./src/platform.d  demo_mcu.elf.size  demo_mcu.elf
+' '
+12:19:11 **** Build of project demo_mcu_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/iic_v3_5/src"
+make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/iic_v3_5/src"
+make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+12:19:15 **** Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/L_gpio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/L_gpio.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/L_gpio.d" -MT"src/L_gpio.o" -o "src/L_gpio.o" "../src/L_gpio.c"
+'Finished building: ../src/L_gpio.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:45:14: warning: unused variable 'temp_u' [-Wunused-variable]
+     uint32_t temp_u;
+              ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9748	    652	   3144	  13544	   34e8	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:19:21 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+12:20:14 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/L_gpio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/L_gpio.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/L_gpio.d" -MT"src/L_gpio.o" -o "src/L_gpio.o" "../src/L_gpio.c"
+'Finished building: ../src/L_gpio.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9692	    652	   3144	  13488	   34b0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:20:16 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+12:22:21 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11364	    656	   3148	  15168	   3b40	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:22:25 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:36 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11328	    656	   3144	  15128	   3b18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:23:42 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+12:29:50 **** Clean-only build of project demo_mcu_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_4/src -s clean 
+make -C microblaze_0/libsrc/iic_v3_5/src -s clean 
+make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+12:29:51 **** Clean-only build of configuration Debug for project demo_mcu ****
+make clean 
+rm -rf  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o  ./src/L_gpio.d ./src/helloworld.d ./src/i2c.d ./src/platform.d  demo_mcu.elf.size  demo_mcu.elf
+' '
+12:29:51 **** Build of project demo_mcu_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/iic_v3_5/src"
+make -C microblaze_0/libsrc/iic_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_4/src"
+make -C microblaze_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/iic_v3_5/src"
+make -C microblaze_0/libsrc/iic_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+12:29:56 **** Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/L_gpio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/L_gpio.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/L_gpio.d" -MT"src/L_gpio.o" -o "src/L_gpio.o" "../src/L_gpio.c"
+'Finished building: ../src/L_gpio.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11328	    656	   3144	  15128	   3b18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:30:06 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:50 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11328	    656	   3144	  15128	   3b18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:50:09 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11328	    656	   3144	  15128	   3b18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:50:26 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11328	    656	   3144	  15128	   3b18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+12:52:00 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11328	    656	   3144	  15128	   3b18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:14:10 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11328	    656	   3144	  15128	   3b18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:14:42 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:139:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t channel, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:143:16: error: 'address' undeclared (first use in this function); did you mean 'addr'?
+  txBuffer[0] = address;
+                ^~~~~~~
+                addr
+../src/i2c.c:143:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c:144:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:14:44 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:139:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:143:16: error: 'address' undeclared (first use in this function); did you mean 'addr'?
+  txBuffer[0] = address;
+                ^~~~~~~
+                addr
+../src/i2c.c:143:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c:144:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:14:57 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:26:16: error: 'address' undeclared (first use in this function); did you mean 'addr'?
+  txBuffer[0] = address;
+                ^~~~~~~
+                addr
+../src/i2c.c:26:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c:27:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:15:24 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:26:16: error: 'address' undeclared (first use in this function); did you mean 'addr'?
+  txBuffer[0] = address;
+                ^~~~~~~
+                addr
+../src/i2c.c:26:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c:27:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:15:31 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:26:16: error: 'address' undeclared (first use in this function); did you mean 'addr'?
+  txBuffer[0] = address;
+                ^~~~~~~
+                addr
+../src/i2c.c:26:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c:27:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:15:48 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:28:16: error: 'address' undeclared (first use in this function); did you mean 'addr'?
+  txBuffer[0] = address;
+                ^~~~~~~
+                addr
+../src/i2c.c:28:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c:29:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:16:35 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:28:16: error: 'address' undeclared (first use in this function); did you mean 'addr'?
+  txBuffer[0] = address;
+                ^~~~~~~
+                addr
+../src/i2c.c:28:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/i2c.c:29:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+../src/i2c.c:26:10: warning: unused variable 'ctrl' [-Wunused-variable]
+  uint8_t ctrl = 0x10 | (cha&0x3) << 1;
+          ^~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:16:59 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:27:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+../src/i2c.c:27:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:17:13 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+../src/i2c.c: In function 'Write_DAC':
+../src/i2c.c:27:17: error: 'data' undeclared (first use in this function)
+  txBuffer[1] = (data >> 8)  & 0xFF;
+                 ^~~~
+../src/i2c.c:27:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:17:34 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:17:43 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:17:58 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:18:02 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:18:06 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:18:08 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:18:20 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:20:11: note: previous declaration of 'Write_DAC' was here
+ uint32_t  Write_DAC  (uint8_t, uint32_t);
+           ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:18:36 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:12:
+../src/i2c.h:9:10: error: expected ';' before 'void'
+ Write_DAC
+          ^
+          ;
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:34: warning: implicit declaration of function 'Get_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x0110:    temp_u = Get_I2C_Device();
+                                  ^~~~~~~~~~~~~~
+../src/helloworld.c:71:25: warning: implicit declaration of function 'Set_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x1110:    Set_I2C_Device(par1);
+                         ^~~~~~~~~~~~~~
+../src/helloworld.c:77:31: warning: implicit declaration of function 'Write_I2C_2' [-Wimplicit-function-declaration]
+         case 0x2110: temp_u = Write_I2C_2(par1, par2);
+                               ^~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:18:43 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:34: warning: implicit declaration of function 'Get_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x0110:    temp_u = Get_I2C_Device();
+                                  ^~~~~~~~~~~~~~
+../src/helloworld.c:71:25: warning: implicit declaration of function 'Set_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x1110:    Set_I2C_Device(par1);
+                         ^~~~~~~~~~~~~~
+../src/helloworld.c:77:31: warning: implicit declaration of function 'Write_I2C_2'; did you mean 'Write_DAC'? [-Wimplicit-function-declaration]
+         case 0x2110: temp_u = Write_I2C_2(par1, par2);
+                               ^~~~~~~~~~~
+                               Write_DAC
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c:22:10: error: conflicting types for 'Write_DAC'
+ uint32_t Write_DAC(uint8_t addr, uint8_t cha, uint16_t val)
+          ^~~~~~~~~
+In file included from ../src/i2c.c:6:
+../src/i2c.h:9:10: note: previous declaration of 'Write_DAC' was here
+ uint32_t Write_DAC (uint8_t, uint32_t);
+          ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/i2c.o] Error 1
+13:18:54 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:34: warning: implicit declaration of function 'Get_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x0110:    temp_u = Get_I2C_Device();
+                                  ^~~~~~~~~~~~~~
+../src/helloworld.c:71:25: warning: implicit declaration of function 'Set_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x1110:    Set_I2C_Device(par1);
+                         ^~~~~~~~~~~~~~
+../src/helloworld.c:77:31: warning: implicit declaration of function 'Write_I2C_2'; did you mean 'Write_DAC'? [-Wimplicit-function-declaration]
+         case 0x2110: temp_u = Write_I2C_2(par1, par2);
+                               ^~~~~~~~~~~
+                               Write_DAC
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/helloworld.o: in function `Exe_cmd':
+F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:65: undefined reference to `Get_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:71: undefined reference to `Set_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:73: undefined reference to `Get_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:77: undefined reference to `Write_I2C_2'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: demo_mcu.elf] Error 1
+13:19:15 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:34: warning: implicit declaration of function 'Get_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x0110:    temp_u = Get_I2C_Device();
+                                  ^~~~~~~~~~~~~~
+../src/helloworld.c:71:25: warning: implicit declaration of function 'Set_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x1110:    Set_I2C_Device(par1);
+                         ^~~~~~~~~~~~~~
+../src/helloworld.c:77:31: warning: implicit declaration of function 'Write_I2C_2' [-Wimplicit-function-declaration]
+         case 0x2110: temp_u = Write_I2C_2(par1, par2);
+                               ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/helloworld.o: in function `Exe_cmd':
+F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:65: undefined reference to `Get_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:71: undefined reference to `Set_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:73: undefined reference to `Get_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:77: undefined reference to `Write_I2C_2'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: demo_mcu.elf] Error 1
+13:19:32 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:34: warning: implicit declaration of function 'Get_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x0110:    temp_u = Get_I2C_Device();
+                                  ^~~~~~~~~~~~~~
+../src/helloworld.c:71:25: warning: implicit declaration of function 'Set_I2C_Device' [-Wimplicit-function-declaration]
+         case 0x1110:    Set_I2C_Device(par1);
+                         ^~~~~~~~~~~~~~
+../src/helloworld.c:77:31: warning: implicit declaration of function 'Write_I2C_2' [-Wimplicit-function-declaration]
+         case 0x2110: temp_u = Write_I2C_2(par1, par2);
+                               ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/helloworld.o: in function `Exe_cmd':
+F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:65: undefined reference to `Get_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:71: undefined reference to `Set_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:73: undefined reference to `Get_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:77: undefined reference to `Write_I2C_2'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: demo_mcu.elf] Error 1
+13:19:35 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/helloworld.o: in function `Exe_cmd':
+F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:65: undefined reference to `Get_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:71: undefined reference to `Set_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:73: undefined reference to `Get_I2C_Device'
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:77: undefined reference to `Write_I2C_2'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: demo_mcu.elf] Error 1
+13:19:46 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:31: warning: implicit declaration of function 'Write_I2C_2' [-Wimplicit-function-declaration]
+         case 0x2110: temp_u = Write_I2C_2(par1, par2);
+                               ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/helloworld.o: in function `Exe_cmd':
+F:\General_Readout_Platform\gen1\fpga\demo_mcu\demo_mcu.sdk\demo_mcu\Debug/../src/helloworld.c:65: undefined reference to `Write_I2C_2'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: demo_mcu.elf] Error 1
+13:19:50 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:31: error: too few arguments to function 'DAC7574_Set'
+         case 0x2110: temp_u = DAC7574_Set(par1, par2);
+                               ^~~~~~~~~~~
+In file included from ../src/helloworld.c:12:
+../src/i2c.h:9:10: note: declared here
+ uint32_t DAC7574_Set (uint8_t, uint8_t, uint16_t);
+          ^~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:19:57 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:66:22: error: too few arguments to function 'DAC7574_Set'
+             temp_u = DAC7574_Set(par1, par2);
+                      ^~~~~~~~~~~
+In file included from ../src/helloworld.c:12:
+../src/i2c.h:9:10: note: declared here
+ uint32_t DAC7574_Set (uint8_t, uint8_t, uint16_t);
+          ^~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:20:13 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:22: error: a label can only be part of a statement and a declaration is not a statement
+         case 0x2110: uint8_t dac_sel = par1 >> 4;
+                      ^~~~~~~
+../src/helloworld.c:66:22: error: too few arguments to function 'DAC7574_Set'
+             temp_u = DAC7574_Set(par1, par2);
+                      ^~~~~~~~~~~
+In file included from ../src/helloworld.c:12:
+../src/i2c.h:9:10: note: declared here
+ uint32_t DAC7574_Set (uint8_t, uint8_t, uint16_t);
+          ^~~~~~~~~~~
+../src/helloworld.c:65:30: warning: unused variable 'dac_sel' [-Wunused-variable]
+         case 0x2110: uint8_t dac_sel = par1 >> 4;
+                              ^~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:20:58 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:65:22: error: a label can only be part of a statement and a declaration is not a statement
+         case 0x2110: uint8_t dac_sel = par1 >> 4;
+                      ^~~~~~~
+../src/helloworld.c:66:13: error: expected expression before 'uint8_t'
+             uint8_t dac_cha = par1 & 0xF;
+             ^~~~~~~
+../src/helloworld.c:67:22: error: too few arguments to function 'DAC7574_Set'
+             temp_u = DAC7574_Set(par1, par2);
+                      ^~~~~~~~~~~
+In file included from ../src/helloworld.c:12:
+../src/i2c.h:9:10: note: declared here
+ uint32_t DAC7574_Set (uint8_t, uint8_t, uint16_t);
+          ^~~~~~~~~~~
+../src/helloworld.c:65:30: warning: unused variable 'dac_sel' [-Wunused-variable]
+         case 0x2110: uint8_t dac_sel = par1 >> 4;
+                              ^~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:21:28 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:66:22: error: a label can only be part of a statement and a declaration is not a statement
+         case 0x2110: uint8_t dac_sel = par1 >> 4;
+                      ^~~~~~~
+../src/helloworld.c:67:13: error: expected expression before 'uint8_t'
+             uint8_t dac_cha = par1 & 0xF;
+             ^~~~~~~
+../src/helloworld.c:68:22: error: too few arguments to function 'DAC7574_Set'
+             temp_u = DAC7574_Set(par1, par2);
+                      ^~~~~~~~~~~
+In file included from ../src/helloworld.c:13:
+../src/i2c.h:9:10: note: declared here
+ uint32_t DAC7574_Set (uint8_t, uint8_t, uint16_t);
+          ^~~~~~~~~~~
+../src/helloworld.c:66:30: warning: unused variable 'dac_sel' [-Wunused-variable]
+         case 0x2110: uint8_t dac_sel = par1 >> 4;
+                              ^~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:21:53 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:66:22: error: a label can only be part of a statement and a declaration is not a statement
+         case 0x2110: uint8_t dac_sel = par1 >> 4;
+                      ^~~~~~~
+../src/helloworld.c:67:13: error: expected expression before 'uint8_t'
+             uint8_t dac_cha = par1 & 0xF;
+             ^~~~~~~
+../src/helloworld.c:68:22: error: too few arguments to function 'DAC7574_Set'
+             temp_u = DAC7574_Set(par1, par2);
+                      ^~~~~~~~~~~
+In file included from ../src/helloworld.c:13:
+../src/i2c.h:9:10: note: declared here
+ uint32_t DAC7574_Set (uint8_t, uint8_t, uint16_t);
+          ^~~~~~~~~~~
+../src/helloworld.c:66:30: warning: unused variable 'dac_sel' [-Wunused-variable]
+         case 0x2110: uint8_t dac_sel = par1 >> 4;
+                              ^~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:21:58 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:66:31: error: too few arguments to function 'DAC7574_Set'
+         case 0x2110: temp_u = DAC7574_Set(par1, par2);
+                               ^~~~~~~~~~~
+In file included from ../src/helloworld.c:13:
+../src/i2c.h:9:10: note: declared here
+ uint32_t DAC7574_Set (uint8_t, uint8_t, uint16_t);
+          ^~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:22:28 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:66:31: error: too few arguments to function 'DAC7574_Set'
+         case 0x2110: temp_u = DAC7574_Set((par1&0xFF)>>4, par2);
+                               ^~~~~~~~~~~
+In file included from ../src/helloworld.c:13:
+../src/i2c.h:9:10: note: declared here
+ uint32_t DAC7574_Set (uint8_t, uint8_t, uint16_t);
+          ^~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/helloworld.o] Error 1
+13:22:38 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11068	    652	   3152	  14872	   3a18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:22:42 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11080	    652	   3148	  14880	   3a20	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:22:54 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11076	    652	   3152	  14880	   3a20	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:23:00 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11076	    652	   3152	  14880	   3a20	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:23:13 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Exe_cmd':
+../src/helloworld.c:66:48: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+         case 0x2110: temp_u = DAC7574_Set(0x4C + (par1&0xFF)>>4, par1&0xF, par2&0xFFF);
+                                           ~~~~~^~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11072	    652	   3148	  14872	   3a18	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:23:22 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11084	    652	   3152	  14888	   3a28	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:23:31 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11116	    652	   3152	  14920	   3a48	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:23:40 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11172	    652	   3152	  14976	   3a80	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:23:44 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11176	    652	   3148	  14976	   3a80	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:23:46 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11176	    652	   3148	  14976	   3a80	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:23:51 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11172	    652	   3152	  14976	   3a80	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:24:26 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+13:25:56 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11224	    652	   3148	  15024	   3ab0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:26:04 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11224	    652	   3148	  15024	   3ab0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:26:09 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11224	    652	   3148	  15024	   3ab0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:26:38 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11464	    652	   3148	  15264	   3ba0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:26:41 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11464	    652	   3148	  15264	   3ba0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:26:43 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+13:27:35 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11476	    652	   3152	  15280	   3bb0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:27:39 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+13:27:58 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11476	    652	   3152	  15280	   3bb0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '
+13:28:01 **** Incremental Build of configuration Debug for project demo_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+13:44:09 **** Auto Build of configuration Debug for project demo_mcu ****
+make all 
+'Building file: ../src/i2c.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -I../../demo_mcu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+'Finished building: ../src/i2c.c'
+' '
+'Building target: demo_mcu.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../demo_mcu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "demo_mcu.elf"  ./src/L_gpio.o ./src/helloworld.o ./src/i2c.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo_mcu.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size demo_mcu.elf  |tee "demo_mcu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11476	    652	   3152	  15280	   3bb0	demo_mcu.elf
+'Finished building: demo_mcu.elf.size'
+' '

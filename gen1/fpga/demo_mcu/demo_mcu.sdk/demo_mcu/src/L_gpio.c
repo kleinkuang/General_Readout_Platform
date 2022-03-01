@@ -12,9 +12,9 @@ void L_GPIO_Init()
     // GPIOs for controlling PCB perpherials
     XGpio_Initialize		(&GPIO_0, XPAR_GPIO_0_DEVICE_ID);
     XGpio_SetDataDirection	(&GPIO_0, 1, 0x00);
-    XGpio_SetDataDirection	(&GPIO_0, 2, 0x00);
+    //XGpio_SetDataDirection	(&GPIO_0, 2, 0x00);
     XGpio_DiscreteWrite		(&GPIO_0, 1, 0x00);
-    XGpio_DiscreteWrite		(&GPIO_0, 2, 0x00);
+    //XGpio_DiscreteWrite		(&GPIO_0, 2, 0x00);
 }
 
 void L_LED_Set(uint8_t channel, uint8_t state)

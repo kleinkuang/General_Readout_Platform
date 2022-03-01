@@ -9,16 +9,19 @@ LD_SRCS += \
 C_SRCS += \
 ../src/L_gpio.c \
 ../src/helloworld.c \
+../src/i2c.c \
 ../src/platform.c 
 
 OBJS += \
 ./src/L_gpio.o \
 ./src/helloworld.o \
+./src/i2c.o \
 ./src/platform.o 
 
 C_DEPS += \
 ./src/L_gpio.d \
 ./src/helloworld.d \
+./src/i2c.d \
 ./src/platform.d 
 
 

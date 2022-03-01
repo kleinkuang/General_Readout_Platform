@@ -66,6 +66,15 @@ set_property  PACKAGE_PIN   AA16        [get_ports UART_gnd]
 set_property  IOSTANDARD    LVCMOS33    [get_ports UART_gnd]
 
 # --------------------------------------------------------------
+# I2C
+# --------------------------------------------------------------
+# - DAC I2C
+set_property  PACKAGE_PIN   H18         [get_ports I2C_DAC_scl_io]
+set_property  IOSTANDARD    LVCMOS33    [get_ports I2C_DAC_scl_io]
+set_property  PACKAGE_PIN   H17         [get_ports I2C_DAC_sda_io]
+set_property  IOSTANDARD    LVCMOS33    [get_ports I2C_DAC_sda_io]
+
+# --------------------------------------------------------------
 # On-board Configuration Memory
 # --------------------------------------------------------------
 set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4    [current_design]

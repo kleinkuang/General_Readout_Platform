@@ -59,6 +59,8 @@ set_property used_in_implementation false [get_files -all f:/General_Readout_Pla
 set_property used_in_implementation false [get_files -all f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_gpio_0_0/bd_mcu_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_gpio_0_0/bd_mcu_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_gpio_0_0/bd_mcu_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_iic_0_0/bd_mcu_axi_iic_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_axi_iic_0_0/bd_mcu_axi_iic_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all F:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/bd_mcu_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/General_Readout_Platform/gen1/fpga/demo_mcu/demo_mcu.srcs/sources_1/bd/bd_mcu/ip/bd_mcu_microblaze_0_0/data/mb_bootloop_le.elf]
 

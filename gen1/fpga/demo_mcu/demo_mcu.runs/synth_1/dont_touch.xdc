@@ -51,4 +51,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_mcu_axi_gpio
 # IP: bd/bd_mcu/ip/bd_mcu_xlslice_0_0/bd_mcu_xlslice_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_mcu_xlslice_0_0 || ORIG_REF_NAME==bd_mcu_xlslice_0_0} -quiet] -quiet
 
+# IP: bd/bd_mcu/ip/bd_mcu_axi_iic_0_0/bd_mcu_axi_iic_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_mcu_axi_iic_0_0 || ORIG_REF_NAME==bd_mcu_axi_iic_0_0} -quiet] -quiet
+
 # XDC: bd/bd_mcu/bd_mcu_ooc.xdc

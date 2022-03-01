@@ -17,3 +17,7 @@ set_property src_info {type:XDC file:1 line:62 export:INPUT save:INPUT read:READ
 set_property  PACKAGE_PIN   Y16         [get_ports UART_txd]
 set_property src_info {type:XDC file:1 line:65 export:INPUT save:INPUT read:READ} [current_design]
 set_property  PACKAGE_PIN   AA16        [get_ports UART_gnd]
+set_property src_info {type:XDC file:1 line:72 export:INPUT save:INPUT read:READ} [current_design]
+set_property  PACKAGE_PIN   H18         [get_ports I2C_DAC_scl_io]
+set_property src_info {type:XDC file:1 line:74 export:INPUT save:INPUT read:READ} [current_design]
+set_property  PACKAGE_PIN   H17         [get_ports I2C_DAC_sda_io]

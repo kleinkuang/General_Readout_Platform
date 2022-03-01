@@ -7,8 +7,10 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include "xparameters.h"
 
 #include "L_gpio.h"
+#include "i2c.h"
 
 /* Private function prototypes -----------------------------------------------*/
 void Error_Handler  ();
@@ -58,6 +60,20 @@ void Exe_cmd()
        					xil_printf("   Cha: %d\n",   par1);
        					xil_printf("   Val: %d\n$#", par2);
        					L_LED_Set(par1, par2);
+                        break;
+
+        // - "write_i2c_2"
+        case 0x2110:	temp_u = DAC7574_Set(0x4C + ((par1&0xFF)>>4), par1&0xF, par2&0xFFF);
+                        if(temp_u==0xFFFFFFFF)
+                        	Print_Error();
+                        else
+                        {
+                        	xil_printf("M: DAC7574\n");
+                        	xil_printf("   Sel:      0x%X\n", 0x4C + ((par1&0xFF)>>4));
+                        	xil_printf("   Cha:      0x%X\n", par1&0xF);
+                        	xil_printf("   Val:      0x%X\n", par2);
+                        	xil_printf("   Vol:      %d [mV]\n$#", par2 * 5000 / 4095);
+                        }
                         break;
 
         default:        xil_printf("Function not implemented\n$#");
